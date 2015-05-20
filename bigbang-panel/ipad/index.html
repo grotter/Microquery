@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ask a Question</title>
+	
+		<link href="../css/global.css" rel="stylesheet" type="text/css" />
+		<script src="/microquery/js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="/microquery/js/jquery.jsonp-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/microquery/js/jquery.noblecount.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/microquery/js/validationutil.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/microquery/js/microquerysubmit.js" type="text/javascript" charset="utf-8"></script>
+        
+		<script type="text/javascript">
+		
+			$(document).ready(function () {
+				var foo = new MicroquerySubmit();
+				foo.initialize();
+			});
+		
+		</script>
+
+		<link rel="apple-touch-icon" sizes="72x72" href="../images/icon-ask.png" />
+	</head>
+
+	<body id="ipad">
+	<center>
+	
+	<img src="/donate/images/big_bang_643_107.png" width="643" height="107" style="padding-top:10px;"><br />
+	<img src="/donate/images/california_academy_of_sciences_643_24.png" width="643" height="24" style="padding-top:8px;">
+
+		<div id="content_842_panel3">
+			
+			<form action="#" method="post">
+				<ul>
+					<li>
+						<input class="default_text textfield" type="text" name="submitter" value="Your name (optional)" id="submitter" />
+					</li>
+					<li>
+						<textarea class="default_text required textfield" name="question" id="question">Your question</textarea>
+					</li>
+					<li id="button-container">
+						<div id="character-count-container" class="hide">
+							<span id="character-count"></span> characters remaining
+						</div>
+						
+						<div id="submit-container">
+							<p id="processing" class="hide">
+								Processing&hellip;
+							</p>
+							<input type="submit" name="submit" value="Submit" id="submit" />
+						</div>
+					</li>
+					<li id="msg-container">
+						<span id="success" class="hide">
+							You successfully submitted your question.
+						</span>
+						
+						<span id="fail" class="hide">
+							Oops, submission attempt failed. Please try again.
+						</span>
+					</li>
+				</ul>
+			</form>
+			
+		</div>
+	
+		</center>
+	
+	</body>
+</html>
